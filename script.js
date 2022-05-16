@@ -33,11 +33,9 @@ ip = "https://api.ipstack.com/check/?access_key=ffab8e1936dd90448d0a2a2988960753
     Script to get the JSON file from an API url
  */
 var getJSON = function(url, callback) {
-
     var xmlhttprequest = new XMLHttpRequest();
     xmlhttprequest.open('GET', url, true);
     xmlhttprequest.responseType = 'json';
-
     xmlhttprequest.onload = function() {
 
         var status = xmlhttprequest.status;
@@ -48,18 +46,15 @@ var getJSON = function(url, callback) {
             callback(status, xmlhttprequest.response);
         }
     };
-
     xmlhttprequest.send();
 };
 /*
     Script to get the country name of the user from the JSON File
  */
 getJSON('https://api.ipstack.com/check/?access_key=ffab8e1936dd90448d0a2a2988960753',  function(err, data) {
-
     if (err != null) {
         console.error(err);
     } else {
-
        var display = `${data.country_name}`;
     }
     let country = document.querySelector('.api')
