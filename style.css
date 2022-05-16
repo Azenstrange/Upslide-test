@@ -1,0 +1,179 @@
+body{
+    font-family: roboto;
+    background-color: #f7f7f7;
+}
+/*
+    Main boxes manager (position between each part on the screen
+*/
+.order_display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.order_display_form{
+    width: 100em;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.order_checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.order_box{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+.order_box_main{
+    margin: 5%;
+}
+/*
+    Order Information manager, filling form size and appearance
+*/
+.order_form_outer{
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px none #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 5px #f3f3f3;
+}
+.order_form_input{
+    display: flex;
+    flex-direction: column;
+    opacity: 30%;
+    width: 50%;
+}
+.order_form_input:hover{
+    opacity: 100%;
+}
+.order_form_input:nth-child(2){
+    margin-left: 20px;
+}
+.order_form_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.order_form_input_last input{
+    width: 95%;
+}
+/*
+    Titles manager
+*/
+.order_title{
+    font-weight: bold;
+    font-size: larger;
+}
+/*
+    Checkout box Manager
+*/
+.order_checkout_summary{
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.order_summary_list{
+    display: flex;
+    flex-direction: column;
+}
+.order_summary_list_price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*
+    Billing total
+*/
+.order_summary_total{
+    font-weight: bold;
+}
+.order_summary_notes{
+    font-size: small;
+    margin-top: -20px;
+}
+.order_summary_submit{
+    display: flex;
+    justify-content: center;
+}
+input[type=submit]{
+    width: 80%;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: 1px none #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff4a2d, #ff4262);
+}
+/*
+    Terms Manager
+*/
+.order_summary_terms{
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*
+    Slider Manager
+*/
+.order_checkout_faq_title{
+    background-color: #eaeaf0;
+    width: fit-content;
+    padding: 10px;
+    margin: 0;
+}
+.order_checkout_faq {
+    width: 19em;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: -30px;
+}
+.order_checkout_faq_slider{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+.order_cherout_faq_slider_slide{
+}
+.order_checkout_faq_slider_slide{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;   
+}
+.slider_bullet{
+    display: flex;
+    justify-content: center;
+}
+.order_checkout_faq_slider .slider_bullet_button{
+    display: inline-block;
+    background-color: black;
+    margin-right: 20px;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    padding: 0;
+    border: 1px solid #ccc;
+}
